@@ -876,6 +876,8 @@ ElunaRegister<GameObject> GameObjectMethods[] =
     { "SetGoState", &LuaGameObject::SetGoState },
     { "SetLootState", &LuaGameObject::SetLootState },
     { "SetRespawnTime", &LuaGameObject::SetRespawnTime },
+    // Shinobi custom
+    { "SetTempGameObjectScale", &LuaGameObject::SetTempGameObjectScale },
 
     // Boolean
     { "IsTransport", &LuaGameObject::IsTransport },
@@ -934,6 +936,7 @@ ElunaRegister<Item> ItemMethods[] =
     { "SetOwner", &LuaItem::SetOwner },
     { "SetBinding", &LuaItem::SetBinding },
     { "SetCount", &LuaItem::SetCount },
+    { "SetText", &LuaItem::SetText },
 
     // Boolean
     { "IsSoulBound", &LuaItem::IsSoulBound },

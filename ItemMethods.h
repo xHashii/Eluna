@@ -686,6 +686,18 @@ namespace LuaItem
     }
 
     /**
+     * Sets the text of the [Item]
+     *
+     * @param std::string text
+     */
+    int SetText(lua_State* L, Item* item)
+    {
+        std::string text = Eluna::CHECKVAL<std::string>(L, 2);
+        item->SetText(text);
+        return 0;
+    }
+
+    /**
      * Sets the specified enchantment of the [Item] to the specified slot
      *
      * @param uint32 enchantId : the ID of the enchant to be applied
